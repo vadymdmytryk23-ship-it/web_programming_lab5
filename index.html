@@ -1,26 +1,39 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Lab 5</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Pixel Hunt Game</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Лабораторна робота №5</h1>
-        <h2>Робота із вводом користувача у JavaScript</h2>
+  <div id="setup-screen">
+    <h1>Pixel Hunt</h1>
+    <label>Choose difficulty:
+      <select id="difficulty">
+        <option value="">--Please choose an option--</option>
+        <option value="lazy">Lazy</option>
+        <option value="normal">Normal</option>
+        <option value="catchme">Catch me if you can</option>
+      </select>
+    </label>
+    <label>Choose color:
+      <select id="color">
+        <option value="">--Please choose an option--</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+    </label>
+    <button id="start-btn">Start</button>
+  </div>
 
-        <label for="nameInput">Введіть ваше ім’я:</label>
-        <input type="text" id="nameInput" placeholder="Ваше ім’я">
+  <div id="game-screen">
+    <p id="score-display">score: 0</p>
+    <p id="timer-display">time left for click: --</p>
+    <div id="pixel"></div>
+  </div>
 
-        <button id="showBtn">Показати повідомлення</button>
-        <button id="clearBtn">Очистити</button>
-        
-
-        <p id="result">Тут з’явиться результат.</p>
-    </div>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
