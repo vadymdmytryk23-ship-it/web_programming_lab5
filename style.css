@@ -1,42 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background: #f2f2f2;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
 }
 
-.container {
-    width: 400px;
-    margin: 80px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+#setup-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
 }
 
-input {
-    width: 90%;
-    padding: 10px;
-    margin: 15px 0;
-    font-size: 16px;
+#setup-screen h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-button {
-    padding: 10px 15px;
-    margin: 5px;
-    border: none;
-    background: #222;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
+#setup-screen select {
+  margin-left: 8px;
+  padding: 4px 8px;
+  font-size: 1rem;
 }
 
-button:hover {
-    background: #444;
+#start-btn {
+  padding: 8px 24px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-#result {
-    margin-top: 20px;
-    font-weight: bold;
+#game-screen {
+  display: none;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#score-display,
+#timer-display {
+  position: absolute;
+  left: 16px;
+  font-size: 1rem;
+}
+
+#score-display { top: 16px; }
+#timer-display { top: 40px; }
+
+#pixel {
+  position: absolute;
+  cursor: pointer;
 }
