@@ -1,3 +1,5 @@
+console.log("MY SCRIPT");
+
 var setupScreen  = document.getElementById("setup-screen");
 var gameScreen   = document.getElementById("game-screen");
 var diffSelect   = document.getElementById("difficulty");
