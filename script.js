@@ -7,6 +7,18 @@ var scoreDisplay = document.getElementById("score-display");
 var timerDisplay = document.getElementById("timer-display");
 var pixel        = document.getElementById("pixel");
 
+
+console.log({
+  setupScreen,
+  gameScreen,
+  diffSelect,
+  colorSelect,
+  startBtn,
+  scoreDisplay,
+  timerDisplay,
+  pixel
+});
+
 var diffSettings = {
   lazy:    { timeLimit: 4, size: 80 },
   normal:  { timeLimit: 2, size: 50 },
